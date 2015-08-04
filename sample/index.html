@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GoogleMaps | InitializeJS</title>
+  <link rel="stylesheet" href="css/application.css">
+</head>
+<body>
+  <div class="container">
+    <h1>initialize.js</h1>
+    <h2>Google Maps</h2>
+    <div data-initialize="GoogleMaps" data-googlemaps-lat="-14.4930719" data-googlemaps-lng="-52.2017732" style="height: 300px;">Loading...</div>
+  </div>
+
+  <!-- components -->
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;libraries=places"></script>
+  <script src="../src/google_maps.js"></script>
+
+  <!-- initializer -->
+  <script src="js/initialize.min.js"></script>
+
+  <script>
+    // load on all scripts
+    window.load = InitializeJS.allElements();
+  </script>
+</body>
+</html>
